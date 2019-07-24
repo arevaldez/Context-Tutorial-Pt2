@@ -17,23 +17,17 @@ class Parent extends Component {
     this.setState({
       toggleGrandChild: !this.state.toggleGrandChild
     });
-    console.log("Toggled ", this.state.toggleGrandChild);
   };
 
   switchNameHandler = newName => {
-    // const name = [...this.state.persons];
-    // name[0].name = newName;
-
     this.setState({
       toggleName: !this.state.toggleName,
-      persons: [
+      people: [
         { id: 0, name: newName, age: 24 },
         { id: 1, name: "Jack", age: 22 },
         { id: 2, name: "Jill", age: 26 }
       ]
     });
-    console.log("ToggledName ", this.state.toggleName);
-    console.log("ToggledName1 ", newName);
   };
 
   render() {
