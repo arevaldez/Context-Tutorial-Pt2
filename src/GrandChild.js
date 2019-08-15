@@ -18,8 +18,8 @@ function GrandChild() {
           <button
             onClick={
               context.state.toggleName
-                ? () => context.switchNameHandler("Bob")
-                : () => context.switchNameHandler("Mark")
+                ? e => context.switchNameHandler("Bob")
+                : e => context.switchNameHandler("Mark")
             }
           >
             Toggle Name
