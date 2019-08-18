@@ -6,7 +6,7 @@ function GrandChild() {
     <Consumer>
       {context => (
         <div>
-          <h1>Granchild Component</h1>
+          <h1>GrandChild Component</h1>
           {context.state.people.map(person => {
             return (
               <p key={person.id}>
